@@ -51,11 +51,13 @@ $active_record = TRUE;
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
 $db['default']['password'] = '';
-$db['default']['database'] = 'dbclinica';
+$db['default']['database'] = 'escuela';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
+
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
+
 $db['default']['cache_on'] = FALSE;
 $db['default']['cachedir'] = '';
 $db['default']['char_set'] = 'utf8';

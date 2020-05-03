@@ -1,5 +1,5 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+<?php if ( ! defined('BASEPATH') ) exit('No direct script access allowed');
+
 
 require_once "AbstractController.php";
 
@@ -9,14 +9,21 @@ public function __construct(){
 	parent::__construct();
 	}
 /**
- * 	Lista de Alumno
+ * Lista de Alumnos
+ * @return [type] [description]
  */
+
 public function index(){
 	
-	echo "index alumnos";
-  	exit;
-  	$this->load->view('alumnos/index');
+	$this->load->model('alumno');
+	
+	$this->alumno->cargar(1);
+	echo $this->alumno->nombre;
+	exit;
 
+
+	
+  	$this->load->view('alumnos/index');
 }
 
 }

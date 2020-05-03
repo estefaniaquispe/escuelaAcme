@@ -340,9 +340,9 @@ class CI_Loader {
 
 		// Initialize the db variable.  Needed to prevent
 		// reference errors with some configurations
-		$CI->db = '';
+		$CI->db = 'db';
 
-		// Load the DB class
+		# Load the DB class
 		$CI->db =& DB($params, $active_record);
 	}
 
